@@ -161,7 +161,7 @@ header {
 #skew1 {
 	background: url(./images/main2.jpg);
 	-webkit-background-size: cover;
-	height: 100vh;
+	height: 80vh;
 	max-width: 100vw;
 	margin: 0;
 	padding: 0;
@@ -289,7 +289,23 @@ img {
 
 
 /* Gallery */
-
+.gale a{
+	display: block;
+	   padding: 20px 15px;
+	   color: white;
+	   border: 2px solid white;
+	   border-radius: 10px;
+	   background: #A00469;
+	   text-decoration: none;
+	   margin-top: 80px;
+	   margin-left: 80px;
+	   width: 100%;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   font-size: 25px;
+	   }
+  
 
 
 
