@@ -1,13 +1,31 @@
 /* General */
+/* Style Sheet 1 */
 
-*, *::before, *::after {
+*, *::before, *::after, p {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 
 }
 
+h2 {
+	margin: 0;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 55px;
+	font-weight: normal;
+	color:#fff;
+	font-family: 'Dancing Script';
+}
 
+p {
+	font-family: georgia, serif;
+	font-weight: normal;
+	padding: 0 50px 0;
+	color:#0d180c;
+	font-size: 24px;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -22,28 +40,33 @@ body {
 
 }
 
-
+a {
+	font-family: georgia, serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
 
 /* Nav */
 
 header {
 	position: sticky;
 	top: 0;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #3b0020;
 	width:100%;
 	height:80px;
-	background-color: #460E2C;
+	background-color: #6D003A;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 100px;
+	padding: 0 100px 10px;
+	font-family: georgia, serif;
 	color: #fff;
 	z-index: 11;
 }
 
 
 .logo {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	margin: 1rem;
 	font-family: 'Dancing Script', cursive;
 }
@@ -69,7 +92,8 @@ header {
 	text-decoration: none;
 	display: block;
 	color: #fff;
-	font-size: 25px;
+	font-size: 18px;
+	text-align: center;
 	padding: 10px 25px;
 	border-radius: 50px;
 	transition: 0.2s;
@@ -79,20 +103,20 @@ header {
 }
 
 .nav-bar ul li a:hover {
-	background: #ffaaaa;
+	background: #D44490;
 }
 
 
 @media only screen and (max-width: 1320px) {
 	header{
-		padding: 0 50px;
+		padding: 10px 50px;
 	}
 }
 
 
 @media only screen and (max-width: 1100px) {
 	header{
-		padding: 0 30px;
+		padding: 10px 30px;
 	}
 }
 
@@ -114,7 +138,7 @@ header {
 		right: 0;
 		width: 100vw;
 		height: 0px;
-		background: #460E2C;
+		background: #6D003A;
 		transition: 0.5s;
 		overflow: hidden;
 
@@ -173,29 +197,40 @@ header {
 }
 
 #skew2 {
-	background: #fff;
+	background: #3c7216;
 	z-index: 9;
+}
+#skew2 h2 {
+	padding-top: 50px;
 }
 
 #skew3 {
-	background: #EDD52D
-	;
+	background: #fff;
 	z-index: 8;
+}
+#skew3 h2 {
+	color:#152113;
 }
 
 #skew4 {
-	background: #fff;
+	background: #D44490;
 	z-index: 7;
+}
+#skew4 h2 {
+	padding-top: 50px;
+}
+
+#skew4 p {
+	color: #3b0020;
 }
 
 #skew5 {
-	background: #005849;
+	background: #041602;
 	z-index: 6;
 }
 
-#skew6 {
-	background: #28ADAD;
-	z-index: 5;
+#skew5 h2 {
+	color: #fff;
 }
 
 
@@ -225,20 +260,11 @@ header {
 .content {
 	font-weight: bold;
 	text-align: center;
-	padding: 200px 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 	display: block;
 	height: auto;
 }
-
-.content h2 {
-	margin: 0;
-	padding-bottom: 200px;
-	text-transform: uppercase;
-	font-size: 55px;
-	color:#5c5b97;
-	font-family: 'Dancing Script';
-}
-
 
 
 /* About */
@@ -247,49 +273,34 @@ header {
 
 /* Equipment */
 
-
-#wrapper {
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	grid-gap: 50px;
-	padding: 20px;
-	
-
-}
-
-
-#wrapper img {
+img {
+	margin-left: 40px;
 	width: 100%;
-	border-radius: 20px;
-
-
-}
-
-
-
-
-/* img {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-	width: 200%;
-	height: 100%;
+	max-width: 85%;
+	height: auto;
 	display: block;
 	border-radius: 35px;
 }
 
 .design {
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 8px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: auto;
 	padding-bottom: 40px;
 }
 
+.design > div {
+	margin-top: 20px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+}
+
 .design > div > img {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	transition: transform 1.5s ease;
 
@@ -298,26 +309,28 @@ header {
 
 .design  > img:hover {
 	transform: scale(1.3);
-} */
+}
 
 
 
 
 /* Gallery */
-.gale {
+.gale a{
 	display: inline-block;
-	background: #A00469;
-	color: #fff;
-	padding: 14px 0;
-	text-transform: uppercase;
-	font-size: 20px;
-	cursor: pointer;
-	margin-top: 60px;
-	width: 250px;
-	border-radius: 10px;
-	text-decoration: none;
-
-}
+	   padding: 20px 15px;
+	   color: white;
+	   border: 2px solid white;
+	   border-radius: 10px;
+	   background: #6D003A;
+	   text-decoration: none;
+	   margin-top: 80px;
+	   /*margin-left: 80px;*/
+	   width: 50%;
+	   /*display: flex;*/
+	   justify-content: center;
+	   align-items: center;
+	   font-size: 25px;
+	   }
   
 
 
@@ -337,8 +350,9 @@ header {
 
 
 .contact-par {
-	padding-bottom: 200px;
+	padding-bottom: 50px;
 	font-size: 30px;
+	color:gray;
 
 }
 
@@ -375,16 +389,29 @@ header {
 
 
 .btn {
+	/*
 	display: inline-block;
-	background: #2F61B5 ;
+	background: #fff ;
 	padding: 14px 0;
 	text-transform: uppercase;
 	font-size: 20px;
 	cursor: pointer;
 	margin-top: 20px;
-	width: 50%;
+	width: 50%
+	*/
+	display: inline-block;
+	font-family: georgia, serif;
+	padding: 20px 15px;
+	color: white;
+	border: 2px solid white;
 	border-radius: 10px;
-
+	background: gray;
+	text-decoration: none;
+	margin-top: 80px;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
 }
 
 
@@ -396,18 +423,18 @@ header {
 	padding: 0;
 	width: 100%;
 	height: 100px;
-	background: #460E2C;
+	border-top: 2px solid #3b0020;
+	background-color: #fff;
 	display: flex;
 }
 
 
 .footer-div > p {
 	width: 40%;
-	font-size: 30px;
+	font-size: 28px;
 	padding-top: 25px;
-	background: #460E2C;
-	border-top: 1px solid #000;
-	color: #fff;
+	background-color: #fff;
+	color: #3b0020;
 	display: flex;
 	justify-content: center;
 }
@@ -418,8 +445,8 @@ header {
 	align-items: center;
 }
 
-.social-link > a > img {
-	width: 100px;
+.social-link, img {
+	width: 250px;
 	padding: 20px;
 	align-items: center;
 	
