@@ -103,7 +103,7 @@ header {
 }
 
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (max-width: 1220px) {
 	header{
 		padding: 0 50px;
 	}
@@ -187,7 +187,7 @@ header {
 }
 
 #skew1 {
-	background: url(/images/main3.jpg);
+	background: url(./images/main3.jpg);
 	-webkit-background-size: cover;
 	height: 80vh;
 	max-width: 100vw;
