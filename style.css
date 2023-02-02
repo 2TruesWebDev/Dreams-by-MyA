@@ -110,7 +110,7 @@ header {
 }
 
 
-@media only screen and (max-width: 1076px) {
+@media only screen and (max-width: 1074px) {
 	header{
 		padding: 0 30px;
 	}
@@ -118,7 +118,7 @@ header {
 
 
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1074px) {
 	.hamburger{
 		display: block;
 		cursor: pointer;
@@ -168,7 +168,7 @@ header {
 }
 
 
-@media only screen and (min-width: 476px) {
+@media only screen and (min-width: 275px) {
 	header{
 		padding: 0 10px;
 	}
@@ -288,7 +288,7 @@ h5 {
 
 #wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 	grid-gap: 10px;
 
 }
@@ -431,7 +431,6 @@ h5 {
 	font-size: 30px;
 	padding-top: 25px;
 	background: #ffaf9c;
-	border-top: 1px solid #000;
 	color: #fff;
 	display: flex;
 	justify-content: center;
