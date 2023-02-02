@@ -6,6 +6,7 @@
 	padding: 0;
 
 }
+
 h2 {
 	margin: 0;
 	padding-top: 100px;
@@ -100,78 +101,6 @@ header {
 
 .nav-bar ul li a:hover {
 	background: #db697a;
-}
-
-
-@media only screen and (max-width: 1220px) {
-	header{
-		padding: 0 50px;
-	}
-}
-
-
-@media only screen and (max-width: 1074px) {
-	header{
-		padding: 0 30px;
-	}
-}
-
-
-
-@media only screen and (max-width: 1074px) {
-	.hamburger{
-		display: block;
-		cursor: pointer;
-	}
-	.hamburger .line {
-		width: 30px;
-		height: 3px;
-		background: #fff;
-		margin: 6px 0;
-	}
-	.nav-bar {
-		position: absolute;
-		top: 80px;
-		left: 0;
-		right: 0;
-		width: 100vw;
-		height: 0px;
-		background: #ffaf9c;
-		transition: 0.5s;
-		overflow: hidden;
-
-	}
-
-	.nav-bar.active {
-		height: 450px;
-	}
-
-
-	.nav-bar ul {
-		display: block;
-		width: fit-content;
-		margin: 80px auto;
-		text-align: center;
-		transition: 0.5s;
-		opacity: 0;
-	}
-
-	.nav-bar.active ul {
-		opacity: 1;
-	}
-
-
-	.nav-bar ul li a {
-		margin-bottom: 15px;
-	}
-
-}
-
-
-@media only screen and (min-width: 275px) {
-	header{
-		padding: 0 10px;
-	}
 }
 
 
@@ -272,9 +201,10 @@ h5 {
 	margin: 0;
 	padding-bottom: 200px;
 	text-transform: uppercase;
-	font-size: 55px;
+	font-size: 45px;
 	color:#402327;
 	font-family: 'Cormorant Garamond', italic;
+	text-align: center;
 }
 
 
@@ -448,3 +378,83 @@ h5 {
 	align-items: center;
 	
 }
+
+
+
+@media all and (max-width: 1390px) {
+	header{
+		padding: 0 50px;
+	}
+}
+
+
+@media all and (max-width: 1160px) {
+	header{
+		padding: 0 30px;
+	}
+}
+
+
+
+@media all and (max-width: 1114px) {
+	header{
+		padding: 0 20px;
+	}
+
+}	
+
+
+
+
+@media all and (max-width: 1095px) {
+	header{
+		padding: 30px;
+	}
+	.hamburger{
+		display: block;
+		cursor: pointer;
+	}
+	.hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fff;
+		margin: 6px 0;
+	}
+	.nav-bar {
+		position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		height: 0px;
+		background: #ffaf9c;
+		transition: 0.5s;
+		overflow: hidden;
+
+	}
+
+	.nav-bar.active {
+		height: 450px;
+	}
+
+
+	.nav-bar ul {
+		display: block;
+		width: fit-content;
+		margin: 80px auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
+	}
+
+	.nav-bar.active ul {
+		opacity: 1;
+	}
+
+
+	.nav-bar ul li a {
+		margin-bottom: 15px;
+	}
+
+}
+
