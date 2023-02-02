@@ -18,11 +18,11 @@ h2 {
 }
 
 p {
-	font-family: georgia, serif;
+	font-family: 'Dancing', cursive;
 	font-weight: normal;
-	padding: 0 50px 0;
+	padding: 20px;
 	color:#0d180c;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 
@@ -116,7 +116,7 @@ header {
 	}
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 500px) {
 	.hamburger{
 		display: block;
 		cursor: pointer;
@@ -179,7 +179,7 @@ header {
 }
 
 #skew1 {
-	background: url(/images/main3.jpg);
+	background: url(main3.jpg);
 	-webkit-background-size: cover;
 	height: 80vh;
 	max-width: 100vw;
@@ -423,6 +423,7 @@ h5 {
 	font-size: 30px;
 	padding-top: 25px;
 	background: #ffaf9c;
+	border-top: 1px solid #000;
 	color: #fff;
 	display: flex;
 	justify-content: center;
